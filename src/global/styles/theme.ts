@@ -119,6 +119,15 @@ export const lightTheme = {
   magenta8: "#9e1068",
   magenta9: "#780650",
   magenta10: "#520339",
+  gray1: "#F4F4F4",
+  gray2: "#DFDFDF",
+  gray3: "#C1C1C1",
+  gray4: "#A5A5A5",
+  gray5: "#8B8B8B",
+  gray6: "#6F6F6F",
+  gray7: "#555555",
+  gray8: "#3D3D3D",
+  gray9: "#242424",
 };
 
 export const darkTheme = {
@@ -242,4 +251,13 @@ export const darkTheme = {
   magenta8: "#f37fb7",
   magenta9: "#f8a8cc",
   magenta10: "#fad2e3",
+  gray1: "#242424",
+  gray2: "#3D3D3D",
+  gray3: "#555555",
+  gray4: "#6F6F6F",
+  gray5: "#8B8B8B",
+  gray6: "#A5A5A5",
+  gray7: "#C1C1C1",
+  gray8: "#DFDFDF",
+  gray9: "#F4F4F4",
 };

@@ -1,4 +1,7 @@
+import { GlobalColors } from "../src/global/styles/color";
+import { darkTheme, lightTheme } from "../src/global/styles/theme";
 import { withThemeFromJSXProvider } from "@storybook/addon-themes";
+import { ThemeProvider } from "styled-components";
 import type { Preview } from "@storybook/react";
 
 const preview: Preview = {
@@ -14,7 +17,13 @@ const preview: Preview = {
 
 export const decorators = [
   withThemeFromJSXProvider({
-    // GlobalStyles, // Adds your GlobalStyle component to all stories
+    themes: {
+      light: lightTheme,
+      dark: darkTheme,
+    },
+    defaultTheme: "light",
+    Provider: ThemeProvider,
+    GlobalStyles: GlobalColors,
   }),
 ];
 
