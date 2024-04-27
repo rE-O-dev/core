@@ -54,6 +54,23 @@ export const GlobalStyles = createGlobalStyle`
 
     appearance: none;
   }
+
+  button {
+    appearance: none;
+    background: none;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+
+    text-align: center;
+
+    &:disabled {
+      cursor: default;
+    }
+  }
   
   /* Custom global colors */
   :root {
@@ -178,5 +195,15 @@ export const GlobalStyles = createGlobalStyle`
     --magenta-8: ${(props) => props.theme.magenta8};
     --magenta-9: ${(props) => props.theme.magenta9};
     --magenta-10: ${(props) => props.theme.magenta10};
+    --gray-1: ${(props) => props.theme.gray1};
+    --gray-2: ${(props) => props.theme.gray2};
+    --gray-3: ${(props) => props.theme.gray3};
+    --gray-4: ${(props) => props.theme.gray4};
+    --gray-5: ${(props) => props.theme.gray5};
+    --gray-6: ${(props) => props.theme.gray6};
+    --gray-7: ${(props) => props.theme.gray7};
+    --gray-8: ${(props) => props.theme.gray8};
+    --gray-9: ${(props) => props.theme.gray9};
+
   }
 `;
