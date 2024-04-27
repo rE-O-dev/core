@@ -1,4 +1,4 @@
-import { GlobalColors } from "../src/global/styles/color";
+import { GlobalStyles } from "../src/global/styles";
 import { darkTheme, lightTheme } from "../src/global/styles/theme";
 import { withThemeFromJSXProvider } from "@storybook/addon-themes";
 import { ThemeProvider } from "styled-components";
@@ -23,7 +23,7 @@ export const decorators = [
     },
     defaultTheme: "light",
     Provider: ThemeProvider,
-    GlobalStyles: GlobalColors,
+    GlobalStyles,
   }),
 ];
 

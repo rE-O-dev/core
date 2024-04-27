@@ -1,19 +1,5 @@
 import { cn } from "@/utils/classNames";
 import styled from "styled-components";
-
-function attrsInputBase(props: React.ComponentProps<"input">) {
-  const { type = "text" } = props;
-  return { type };
-}
-export const InputBase = styled.input.attrs(attrsInputBase)`
-  background: transparent;
-  margin: 0;
-  border: none;
-  padding: 0;
-
-  appearance: none;
-`;
-
 interface CheckboxProps {
   indeterminated?: boolean;
 }
@@ -26,7 +12,7 @@ function attrsCheckBox(props: CheckboxProps & React.ComponentProps<"input">) {
   };
 }
 
-export const CheckBoxContainer = styled(InputBase).attrs(
+export const CheckBoxContainer = styled.input.attrs(
   attrsCheckBox
 )<CheckboxProps>`
   width: 14px;

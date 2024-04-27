@@ -1,6 +1,6 @@
 "use client";
 
-import { GlobalColors } from "@/global/styles/color";
+import { GlobalStyles } from "@/global/styles";
 import { darkTheme, lightTheme } from "@/global/styles/theme";
 import React from "react";
 import styled, { ThemeProvider } from "styled-components";
@@ -21,7 +21,7 @@ export default function ThemeClient({
 
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-      <GlobalColors />
+      <GlobalStyles />
       <button onClick={switchTheme}>Switch Theme</button>
       <Temp>Font Theme</Temp>
       {children}
